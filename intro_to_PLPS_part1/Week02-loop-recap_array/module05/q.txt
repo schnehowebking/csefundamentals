@@ -1,0 +1,1 @@
+You will be given two numbers a and b print "Yes" if they are divisible to each other else print "No".

@@ -1,0 +1,3717 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <table summary="All C library functions." id="stalib__statable" class="defaultstyle bx--data-table"><caption class="bx--data-table-header"><span class="tablecap bx--data-table-header__title">Table 1. Standard C Library Functions</span></caption><colgroup><col style="width:22.22222222222222%"><col style="width:14.393939393939394%"><col style="width:28.28282828282828%"><col style="width:35.1010101010101%"></colgroup><thead style="text-align:left;">
+        <tr>
+        <th id="d116437e56" class="thleft thbot"><div class="bx--table-header-label">Function</div></th>
+        
+        <th id="d116437e59" class="thleft thbot"><div class="bx--table-header-label">System Include File</div></th>
+        
+        <th id="d116437e62" class="thleft thbot"><div class="bx--table-header-label">Function Prototype</div></th>
+        
+        <th id="d116437e65" class="thleft thbot"><div class="bx--table-header-label">Description</div></th>
+        
+        </tr>
+        
+        </thead>
+        <tbody>
+        <tr>
+        <td headers="d116437e56 " class="tdleft">abort</td>
+        
+        <td headers="d116437e59 " class="tdleft">stdlib.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">void abort(void);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Stops a program abnormally.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">abs</td>
+        
+        <td headers="d116437e59 " class="tdleft">stdlib.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">int abs(int <em>n</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Calculates the absolute value of
+        an integer argument <em>n</em>.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">acos</td>
+        
+        <td headers="d116437e59 " class="tdleft">math.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">double acos(double <em>x</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Calculates the arc cosine of <em>x</em>.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">asctime</td>
+        
+        <td headers="d116437e59 " class="tdleft">time.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">char *asctime(const struct tm *<em>time</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Converts the <em>time</em> that is
+        stored as a structure to a character string.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">asctime_r</td>
+        
+        <td headers="d116437e59 " class="tdleft">time.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">char *asctime_r (const struct tm
+        *tm, char *buf);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Converts <span class="ph synph"><span class="ph var">tm</span></span> that
+        is stored as a structure to a character string. (Restartable version
+        of asctime.)</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">asin</td>
+        
+        <td headers="d116437e59 " class="tdleft">math.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">double asin(double <em>x</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Calculates the arc sine of <em>x</em>.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">assert</td>
+        
+        <td headers="d116437e59 " class="tdleft">assert.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">void assert(int <em>expression</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Prints a diagnostic message and ends
+        the program if the expression is false.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">atan</td>
+        
+        <td headers="d116437e59 " class="tdleft">math.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">double atan(double <em>x</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Calculates the arc tangent of <em>x</em>.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">atan2</td>
+        
+        <td headers="d116437e59 " class="tdleft">math.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">double atan2(double <em>y</em>, double <em>x</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Calculates the arc tangent of <em>y/x</em>.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">atexit</td>
+        
+        <td headers="d116437e59 " class="tdleft">stdlib.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">int atexit(void (*<em>func</em>)(void));</td>
+        
+        <td headers="d116437e65 " class="tdleft">Registers a function to be called
+        at normal termination.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">atof</td>
+        
+        <td headers="d116437e59 " class="tdleft">stdlib.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">double atof(const char *<em>string</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Converts <em>string</em> to a double-precision
+        floating-point value.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">atoi</td>
+        
+        <td headers="d116437e59 " class="tdleft">stdlib.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">int atoi(const char *<em>string</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Converts <em>string</em> to an integer.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">atol</td>
+        
+        <td headers="d116437e59 " class="tdleft">stdlib.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">long int atol(const char *<em>string</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Converts <em>string</em> to a long
+        integer.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">bsearch</td>
+        
+        <td headers="d116437e59 " class="tdleft">stdlib.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">void *bsearch(const void *<em>key</em>,
+        const void *<em>base</em>, size_t <em>num</em>, size_t <em>size</em>, int
+        (*<em>compare</em>) (const void *<em>element1</em>, const void *<em>element2</em>));</td>
+        
+        <td headers="d116437e65 " class="tdleft">Performs a binary search on an array
+        of <em>num</em> elements, each of <em>size</em> bytes. The array must
+        be sorted in ascending order by the function pointed to by <em>compare</em>.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">btowc</td>
+        
+        <td headers="d116437e59 " class="tdleft"><div class="lines">stdio.h<br>
+        wchar.h</div>
+        </td>
+        
+        <td headers="d116437e62 " class="tdleft">wint_t btowc(int <em>c</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Determines whether <em>c</em> constitues
+        a valid multibyte character in the initial shift state.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">calloc</td>
+        
+        <td headers="d116437e59 " class="tdleft">stdlib.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">void *calloc(size_t <em>num</em>, size_t <em>size</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Reserves storage space for an array
+        of <em>num</em> elements, each of size <em>size</em>, and initializes
+        the values of all elements to 0.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">catclose<sup>6</sup></td>
+        
+        <td headers="d116437e59 " class="tdleft">nl_types.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">int catclose (nl_catd catd);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Closes a previously opened message
+        catalog.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">catgets<sup>6</sup></td>
+        
+        <td headers="d116437e59 " class="tdleft">nl_types.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">char *catgets(nl_catd catd, int set_id,
+        int msg_id, const char *s);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Retrieves a message from an open
+        message catalog.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">catopen<sup>6</sup></td>
+        
+        <td headers="d116437e59 " class="tdleft">nl_types.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">nl_catd catopen (const char *name,
+        int oflag);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Opens a message catalog, which must
+        be done before a message can be retrieved.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">ceil</td>
+        
+        <td headers="d116437e59 " class="tdleft">math.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">double ceil(double <em>x</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Calculates the double value representing
+        the smallest integer that is greater than or equal to <em>x</em>.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">clearerr</td>
+        
+        <td headers="d116437e59 " class="tdleft">stdio.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">void clearerr(FILE *<em>stream</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Resets the error indicators and the
+        end-of-file indicator for <em>stream</em>.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">clock</td>
+        
+        <td headers="d116437e59 " class="tdleft">time.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">clock_t clock(void);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Returns the processor time that has
+        elapsed since the job was started.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">cos</td>
+        
+        <td headers="d116437e59 " class="tdleft">math.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">double cos(double <em>x</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Calculates the cosine of <em>x</em>.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">cosh</td>
+        
+        <td headers="d116437e59 " class="tdleft">math.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">double cosh(double <em>x</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Calculates the hyperbolic cosine
+        of <em>x</em>.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">ctime</td>
+        
+        <td headers="d116437e59 " class="tdleft">time.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">char *ctime(const time_t *<em>time</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Converts <em>time</em> to a character
+        string.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">ctime64</td>
+        
+        <td headers="d116437e59 " class="tdleft">time.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">char *ctime64(const time64_t *<em>time</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Converts <em>time</em> to a character
+        string.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">ctime_r</td>
+        
+        <td headers="d116437e59 " class="tdleft">time.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">char *ctime_r(const time_t *time,
+        char *buf);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Converts <em>time</em> to a character
+        string. (Restartable version of ctime.)</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">ctime64_r</td>
+        
+        <td headers="d116437e59 " class="tdleft">time.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">char *ctime64_r(const time64_t *time,
+        char *buf);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Converts <em>time</em> to a character
+        string. (Restartable version of ctime64.)</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">difftime</td>
+        
+        <td headers="d116437e59 " class="tdleft">time.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">double difftime(time_t <em>time2</em>,
+        time_t <em>time1</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Computes the difference between <em>time2</em> and <em>time1</em>.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">difftime64</td>
+        
+        <td headers="d116437e59 " class="tdleft">time.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">double difftime64(time64_t <em>time2</em>,
+        time64_t <em>time1</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Computes the difference between <em>time2</em> and <em>time1</em>.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">div</td>
+        
+        <td headers="d116437e59 " class="tdleft">stdlib.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">div_t div(int <em>numerator</em>, int <em>denominator</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Calculates the quotient and remainder
+        of the division of <em>numerator</em> by <em>denominator</em>.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">erf</td>
+        
+        <td headers="d116437e59 " class="tdleft">math.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">double erf(double <em>x</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Calculates the error function of
+         <em>x</em>.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">erfc</td>
+        
+        <td headers="d116437e59 " class="tdleft">math.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">double erfc(double <em>x</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Calculates the error function for
+        large values of <em>x</em>.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">exit</td>
+        
+        <td headers="d116437e59 " class="tdleft">stdlib.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">void exit(int <em>status</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Ends a program normally.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">exp</td>
+        
+        <td headers="d116437e59 " class="tdleft">math.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">double exp(double <em>x</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Calculates the exponential function
+        of a floating-point argument <em>x</em>.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">fabs</td>
+        
+        <td headers="d116437e59 " class="tdleft">math.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">double fabs(double <em>x</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Calculates the absolute value of
+        a floating-point argument <em>x</em>.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">fclose</td>
+        
+        <td headers="d116437e59 " class="tdleft">stdio.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">int fclose(FILE *<em>stream</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Closes the specified <em>stream</em>.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">fdopen<sup>5</sup></td>
+        
+        <td headers="d116437e59 " class="tdleft">stdio.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">FILE *fdopen(int <span class="ph synph"><span class="ph var">handle</span></span>,
+        const char <span class="ph synph"><span class="ph var">*type</span></span>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Associates an input or output stream
+        with the file identified by handle.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">feof</td>
+        
+        <td headers="d116437e59 " class="tdleft">stdio.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">int feof(FILE *<em>stream</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Tests whether the end-of-file flag
+        is set for a given <em>stream</em>.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">ferror</td>
+        
+        <td headers="d116437e59 " class="tdleft">stdio.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">int ferror(FILE *<em>stream</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Tests for an error indicator in reading
+        from or writing to <em>stream</em>.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">fflush<sup>1</sup></td>
+        
+        <td headers="d116437e59 " class="tdleft">stdio.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">int fflush(FILE *<em>stream</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Writes the contents of the buffer
+        associated with the output <em>stream</em>.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">fgetc<sup>1</sup></td>
+        
+        <td headers="d116437e59 " class="tdleft">stdio.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">int fgetc(FILE *<em>stream</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Reads a single unsigned character
+        from the input <em>stream</em>.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">fgetpos<sup>1</sup></td>
+        
+        <td headers="d116437e59 " class="tdleft">stdio.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">int fgetpos(FILE *<em>stream</em>,
+        fpos_t *<em>pos</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Stores the current position of the
+        file pointer associated with <em>stream</em> into the object pointed
+        to by <em>pos</em>.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">fgets<sup>1</sup></td>
+        
+        <td headers="d116437e59 " class="tdleft">stdio.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">char *fgets(char *<em>string</em>,
+        int <em>n</em>, FILE *<em>stream</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Reads a string from the input <em>stream</em>.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">fgetwc<sup>6</sup></td>
+        
+        <td headers="d116437e59 " class="tdleft"><div class="lines">stdio.h<br>
+        wchar.h</div>
+        </td>
+        
+        <td headers="d116437e62 " class="tdleft">wint_t fgetwc(FILE *<em>stream</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Reads the next multibyte character
+        from the input stream pointed to by <em>stream</em>. </td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">fgetws<sup>6</sup></td>
+        
+        <td headers="d116437e59 " class="tdleft"><div class="lines">stdio.h<br>
+        wchar.h</div>
+        </td>
+        
+        <td headers="d116437e62 " class="tdleft">wchar_t *fgetws(wchar_t *<em>wcs</em>,
+         int <em>n</em>, FILE *<em>stream</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Reads wide characters from the stream
+        into the array pointed to by <em>wcs</em>.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">fileno<sup>5</sup></td>
+        
+        <td headers="d116437e59 " class="tdleft">stdio.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">int fileno(FILE <span class="ph synph"><span class="ph var">*stream</span></span>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Determines the file handle currently
+        associated with <span class="ph synph"><span class="ph var">stream</span></span>.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">floor</td>
+        
+        <td headers="d116437e59 " class="tdleft">math.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">double floor(double <em>x</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Calculates the floating-point value
+        representing the largest integer less than or equal to <em>x</em>.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">fmod</td>
+        
+        <td headers="d116437e59 " class="tdleft">math.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">double fmod(double <em>x</em>, double <em>y</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Calculates the floating-point remainder
+        of <em>x/y</em>.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">fopen</td>
+        
+        <td headers="d116437e59 " class="tdleft">stdio.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">FILE *fopen(const char *<em>filename</em>,
+        const char *<em>mode</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Opens the specified file.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">fprintf</td>
+        
+        <td headers="d116437e59 " class="tdleft">stdio.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">int fprintf(FILE *<em>stream</em>,
+        const char *<em>format-string</em>, <em>arg-list</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Formats and prints characters and
+        values to the output <em>stream</em>.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">fputc<sup>1</sup></td>
+        
+        <td headers="d116437e59 " class="tdleft">stdio.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">int fputc(int <em>c</em>, FILE *<em>stream</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Prints a character to the output <em>stream</em>.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">fputs<sup>1</sup></td>
+        
+        <td headers="d116437e59 " class="tdleft">stdio.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">int fputs(const char *<em>string</em>,
+        FILE *<em>stream</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Copies a string to the output <em>stream</em>.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">fputwc<sup>6</sup></td>
+        
+        <td headers="d116437e59 " class="tdleft"><div class="lines">stdio.h<br>
+        wchar.h</div>
+        </td>
+        
+        <td headers="d116437e62 " class="tdleft">wint_t fputwc(wchar_t <em>wc</em>,
+         FILE <em>*stream</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Converts the wide character <em>wc</em> to
+        a multibyte character and writes it to the output stream pointed to
+        by  <em>stream</em> at the current position.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">fputws<sup>6</sup></td>
+        
+        <td headers="d116437e59 " class="tdleft"><div class="lines">stdio.h<br>
+        wchar.h</div>
+        </td>
+        
+        <td headers="d116437e62 " class="tdleft">int fputws(const wchar_t *<em>wcs</em>,
+        FILE  <em>*stream</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Converts the wide-character string <em>wcs</em> to
+        a multibyte-character string and writes it to <em>stream</em> as a multibyte
+        character string.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">fread</td>
+        
+        <td headers="d116437e59 " class="tdleft">stdio.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">size_t fread(void *<em>buffer</em>,
+        size_t <em>size</em>, size_t <em>count</em>, FILE *<em>stream</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Reads up to <span class="ph synph"><span class="ph var">count</span></span> items
+        of <em>size</em> length from the input <em>stream</em>, and stores them
+        in <em>buffer</em>.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">free</td>
+        
+        <td headers="d116437e59 " class="tdleft">stdlib.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">void free(void *<em>ptr</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Frees a block of storage.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">freopen</td>
+        
+        <td headers="d116437e59 " class="tdleft">stdio.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">FILE *freopen(const char *<em>filename</em>,
+        const char *<em>mode</em>, FILE *<em>stream</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Closes <em>stream</em>, and reassigns
+        it to the file specified.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">frexp</td>
+        
+        <td headers="d116437e59 " class="tdleft">math.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">double frexp(double <em>x</em>, int
+        *<em>expptr</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Separates a floating-point number
+        into its mantissa and exponent.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">fscanf</td>
+        
+        <td headers="d116437e59 " class="tdleft">stdio.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">int fscanf(FILE *<em>stream</em>, const
+        char *<em>format-string</em>, <em>arg-list</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Reads data from <em>stream</em> into
+        locations given by <em>arg-list</em>.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">fseek<sup>1</sup></td>
+        
+        <td headers="d116437e59 " class="tdleft">stdio.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">int fseek(FILE *<em>stream</em>, long
+        int <em>offset</em>, int <em>origin</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Changes the current file position
+        associated with <em>stream</em> to a new location.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">fsetpos<sup>1</sup></td>
+        
+        <td headers="d116437e59 " class="tdleft">stdio.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">int fsetpos(FILE *<em>stream</em>,
+        const fpos_t *<em>pos</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Moves the current file position to
+        a new location determined by <em>pos</em>.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">ftell<sup>1</sup></td>
+        
+        <td headers="d116437e59 " class="tdleft">stdio.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">long int ftell(FILE *<em>stream</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Gets the current position of the
+        file pointer.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">fwide<sup>6</sup></td>
+        
+        <td headers="d116437e59 " class="tdleft"><div class="lines">stdio.h<br>
+        wchar.h</div>
+        </td>
+        
+        <td headers="d116437e62 " class="tdleft">int fwide(FILE <em>*stream</em>, int <em>mode</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Determines the orientation of the
+        stream pointed to by <em>stream</em>.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">fwprintf<sup>6</sup></td>
+        
+        <td headers="d116437e59 " class="tdleft"><div class="lines">stdio.h<br>
+        wchar.h</div>
+        </td>
+        
+        <td headers="d116437e62 " class="tdleft">int fwprintf(FILE <em>*stream</em>,
+        const wchar_t <em>*format</em>, <em>arg-list</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Writes output to the stream pointed
+        to by <em>stream</em>.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">fwrite</td>
+        
+        <td headers="d116437e59 " class="tdleft">stdio.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">size_t fwrite(const void *<em>buffer</em>,
+        size_t <em>size</em>,size_t <em>count</em>, FILE *<em>stream</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Writes up to <em>count</em> items of <em>size</em> length
+        from <em>buffer</em> to <em>stream</em>.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">fwscanf<sup>6</sup></td>
+        
+        <td headers="d116437e59 " class="tdleft"><div class="lines">stdio.h<br>
+        wchar.h</div>
+        </td>
+        
+        <td headers="d116437e62 " class="tdleft">int fwscanf(FILE <em>*stream</em>,
+        const wchar_t <em>*format</em>, <em>arg-list</em>)</td>
+        
+        <td headers="d116437e65 " class="tdleft">Reads input from the stream pointed
+        to by <em>stream</em>.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">gamma</td>
+        
+        <td headers="d116437e59 " class="tdleft">math.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">double gamma(double <em>x</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Computes the Gamma Function</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">getc<sup>1</sup></td>
+        
+        <td headers="d116437e59 " class="tdleft">stdio.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">int getc(FILE *<em>stream</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Reads a single character from the
+        input <em>stream</em>.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">getchar<sup>1</sup></td>
+        
+        <td headers="d116437e59 " class="tdleft">stdio.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">int getchar(void);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Reads a single character from <em>stdin.</em></td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">getenv</td>
+        
+        <td headers="d116437e59 " class="tdleft">stdlib.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">char *getenv(const char *<em>varname</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Searches environment variables for <em>varname</em>.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">gets</td>
+        
+        <td headers="d116437e59 " class="tdleft">stdio.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">char *gets(char *<em>buffer</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Reads a string from <em>stdin</em>,
+        and stores it in <em>buffer</em>.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">getwc<sup>6</sup></td>
+        
+        <td headers="d116437e59 " class="tdleft"><div class="lines">stdio.h<br>
+        wchar.h</div>
+        </td>
+        
+        <td headers="d116437e62 " class="tdleft">wint_t getwc(FILE <em>*stream</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Reads the next multibyte character
+        from  <em>stream</em>, converts it to a wide character and advances
+        the associated file position indicator for <em>stream</em>.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">getwchar<sup>6</sup></td>
+        
+        <td headers="d116437e59 " class="tdleft">wchar.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">wint_t getwchar(void);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Reads the next multibyte character
+        from stdin, converts it to a wide character, and advances the associated
+        file position indicator for stdin.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">gmtime</td>
+        
+        <td headers="d116437e59 " class="tdleft">time.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">struct tm *gmtime(const time_t *<em>time</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Converts a <em>time</em> value to a
+        structure of type tm.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">gmtime64</td>
+        
+        <td headers="d116437e59 " class="tdleft">time.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">struct tm *gmtime64(const time64_t
+        *<em>time</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Converts a <em>time</em> value to a
+        structure of type tm.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">gmtime_r</td>
+        
+        <td headers="d116437e59 " class="tdleft">time.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">struct tm *gmtime_r (const time_t
+        *time, struct tm *result);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Converts a <span class="ph synph"><span class="ph var">time</span></span> value
+        to a structure of type tm. (Restartable version of gmtime.)</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">gmtime64_r</td>
+        
+        <td headers="d116437e59 " class="tdleft">time.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">struct tm *gmtime64_r (const time64_t
+        *time, struct tm *result);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Converts a <span class="ph synph"><span class="ph var">time</span></span> value
+        to a structure of type tm. (Restartable version of gmtime64.)</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">hypot</td>
+        
+        <td headers="d116437e59 " class="tdleft">math.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">double hypot(double <em>side1</em>,
+        double <em>side2</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Calculates the hypotenuse of a right-angled
+        triangle with sides of length <em>side1</em> and <em>side2</em>.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">isalnum</td>
+        
+        <td headers="d116437e59 " class="tdleft">ctype.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">int isalnum(int <em>c</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Tests if <em>c</em> is alphanumeric.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">isalpha</td>
+        
+        <td headers="d116437e59 " class="tdleft">ctype.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">int isalpha(int <em>c</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Tests if <em>c</em> is alphabetic.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">isascii<sup>4</sup></td>
+        
+        <td headers="d116437e59 " class="tdleft">ctype.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">int isascii(int <em>c</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Tests if <em>c</em> is within the 7-bit
+        US-ASCII range.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">isblank</td>
+        
+        <td headers="d116437e59 " class="tdleft">ctype.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">int isblank(int <em>c</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Tests if <em>c</em> is a blank or
+        tab character.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">iscntrl</td>
+        
+        <td headers="d116437e59 " class="tdleft">ctype.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">int iscntrl(int <em>c</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Tests if <em>c</em> is a control character.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">isdigit</td>
+        
+        <td headers="d116437e59 " class="tdleft">ctype.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">int isdigit(int <em>c</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Tests if <em>c</em> is a decimal digit.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">isgraph</td>
+        
+        <td headers="d116437e59 " class="tdleft">ctype.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">int isgraph(int <em>c</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Tests if <em>c</em> is a printable
+        character excluding the space.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">islower</td>
+        
+        <td headers="d116437e59 " class="tdleft">ctype.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">int islower(int <em>c</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Tests if <em>c</em> is a lowercase
+        letter.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">isprint</td>
+        
+        <td headers="d116437e59 " class="tdleft">ctype.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">int isprint(int <em>c</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Tests if <em>c</em> is a printable
+        character including the space.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">ispunct</td>
+        
+        <td headers="d116437e59 " class="tdleft">ctype.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">int ispunct(int <em>c</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Tests if <em>c</em> is a punctuation
+        character.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">isspace</td>
+        
+        <td headers="d116437e59 " class="tdleft">ctype.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">int isspace(int <em>c</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Tests if <em>c</em> is a whitespace
+        character.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">isupper</td>
+        
+        <td headers="d116437e59 " class="tdleft">ctype.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">int isupper(int <em>c</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Tests if <em>c</em> is an uppercase
+        letter.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">iswalnum<sup>4</sup></td>
+        
+        <td headers="d116437e59 " class="tdleft">wctype.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">int iswalnum (wint_t wc);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Checks for any alphanumeric wide
+        character.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">iswalpha<sup>4</sup></td>
+        
+        <td headers="d116437e59 " class="tdleft">wctype.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">int iswalpha (wint_t wc);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Checks for any alphabetic wide
+        character.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">iswblank<sup>4</sup></td>
+        
+        <td headers="d116437e59 " class="tdleft">wctype.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">int iswblank (wint_t wc);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Checks for any blank or tab wide
+        character.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">iswcntrl<sup>4</sup></td>
+        
+        <td headers="d116437e59 " class="tdleft">wctype.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">int iswcntrl (wint_t wc);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Tests for any control wide character.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">iswctype<sup>4</sup></td>
+        
+        <td headers="d116437e59 " class="tdleft">wctype.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">int iswctype(wint_t wc, wctype_t
+        wc_prop);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Determines whether or not the wide
+        character wc has the property wc_prop.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">iswdigit<sup>4</sup></td>
+        
+        <td headers="d116437e59 " class="tdleft">wctype.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">int iswdigit (wint_t wc);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Checks for any decimal-digit wide
+        character.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">iswgraph<sup>4</sup></td>
+        
+        <td headers="d116437e59 " class="tdleft">wctype.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">int iswgraph (wint_t wc);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Checks for any printing wide character
+        except for the wide-character space.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">iswlower<sup>4</sup></td>
+        
+        <td headers="d116437e59 " class="tdleft">wctype.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">int iswlower (wint_t wc);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Checks for any lowercase wide character.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">iswprint<sup>4</sup></td>
+        
+        <td headers="d116437e59 " class="tdleft">wctype.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">int iswprint (wint_t wc);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Checks for any printing wide character.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">iswpunct<sup>4</sup></td>
+        
+        <td headers="d116437e59 " class="tdleft">wctype.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">int iswpunct (wint_t wc);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Test for a wide non-alphanumeric,
+        non-space character.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">iswspace<sup>4</sup></td>
+        
+        <td headers="d116437e59 " class="tdleft">wctype.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">int iswspace (wint_t wc);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Checks for any wide character that
+        corresponds to an implementation-defined set of wide characters for
+        which iswalnum is false.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">iswupper<sup>4</sup></td>
+        
+        <td headers="d116437e59 " class="tdleft">wctype.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">int iswupper (wint_t wc);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Checks for any uppercase wide character.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">iswxdigit<sup>4</sup></td>
+        
+        <td headers="d116437e59 " class="tdleft">wctype.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">int iswxdigit (wint_t wc);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Checks for any hexadecimal digit
+        character.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">isxdigit<sup>4</sup></td>
+        
+        <td headers="d116437e59 " class="tdleft">wctype.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">int isxdigit(int <em>c</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Tests if <em>c</em> is a hexadecimal
+        digit.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">j0</td>
+        
+        <td headers="d116437e59 " class="tdleft">math.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">double j0(double <em>x</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Calculates the Bessel function value
+        of the first kind of order 0.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">j1</td>
+        
+        <td headers="d116437e59 " class="tdleft">math.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">double j1(double <em>x</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Calculates the Bessel function value
+        of the first kind of order 1.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">jn</td>
+        
+        <td headers="d116437e59 " class="tdleft">math.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">double jn(int <em>n</em>, double <em>x</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Calculates the Bessel function value
+        of the first kind of order <span class="ph synph"><span class="ph var">n</span></span>.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">labs</td>
+        
+        <td headers="d116437e59 " class="tdleft">stdlib.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">long int labs(long int <em>n</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Calculates the absolute value of <em>n</em>.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">ldexp</td>
+        
+        <td headers="d116437e59 " class="tdleft">math.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">double ldexp(double <em>x</em>, int <em>exp</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Returns the value of <em>x</em> multiplied
+        by (2 to the power of <em>exp</em>).</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">ldiv</td>
+        
+        <td headers="d116437e59 " class="tdleft">stdlib.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">ldiv_t ldiv(long int <em>numerator</em>,
+        long int <em>denominator</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Calculates the quotient and remainder
+        of <em>numerator</em>/<em>denominator</em>.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">localeconv</td>
+        
+        <td headers="d116437e59 " class="tdleft">locale.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">struct lconv *localeconv(void);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Formats numeric quantities in struct
+        lconv according to the current locale.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">localtime</td>
+        
+        <td headers="d116437e59 " class="tdleft">time.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">struct tm *localtime(const time_t
+        *<em>timeval</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Converts <em>timeval</em> to a structure
+        of type tm.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">localtime64</td>
+        
+        <td headers="d116437e59 " class="tdleft">time.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">struct tm *localtime64(const time64_t
+        *<em>timeval</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Converts <em>timeval</em> to a structure
+        of type tm.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">localtime_r</td>
+        
+        <td headers="d116437e59 " class="tdleft">time.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">struct tm *localtime_r (const time_t
+        *timeval, struct tm *result);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Converts a <span class="ph synph"><span class="ph var">time</span></span> value
+        to a structure of type <span class="ph synph"><span class="ph var">tm</span></span>. (Restartable
+        version of localtime.)</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">localtime64_r</td>
+        
+        <td headers="d116437e59 " class="tdleft">time.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">struct tm *localtime64_r (const time64_t
+        *timeval, struct tm *result);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Converts a <span class="ph synph"><span class="ph var">time</span></span> value
+        to a structure of type <span class="ph synph"><span class="ph var">tm</span></span>. (Restartable
+        version of localtime64.)</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">log</td>
+        
+        <td headers="d116437e59 " class="tdleft">math.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">double log(double <em>x</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Calculates the natural logarithm
+        of <em>x</em>.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">log10</td>
+        
+        <td headers="d116437e59 " class="tdleft">math.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">double log10(double <em>x</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Calculates the base 10 logarithm
+        of <em>x</em>.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">longjmp</td>
+        
+        <td headers="d116437e59 " class="tdleft">setjmp.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">void longjmp(jmp_buf <em>env</em>,
+        int <em>value</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Restores a stack environment previously
+        set in <em>env</em> by the setjmp function.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">malloc</td>
+        
+        <td headers="d116437e59 " class="tdleft">stdlib.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">void *malloc(size_t <em>size</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Reserves a block of storage.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">mblen</td>
+        
+        <td headers="d116437e59 " class="tdleft">stdlib.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">int mblen(const char *<em>string</em>,
+        size_t <em>n</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Determines the length of a multibyte
+        character <em>string</em>.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">mbrlen<sup>4</sup></td>
+        
+        <td headers="d116437e59 " class="tdleft">wchar.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">int mbrlen (const char *s, size_t
+        n, mbstate_t *ps);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Determines the length of a multibyte
+        character. (Restartable version of mblen.)</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">mbrtowc<sup>4</sup></td>
+        
+        <td headers="d116437e59 " class="tdleft">wchar.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">int mbrtowc (wchar_t *pwc, const
+        char *s, size_t n, mbstate_t *ps);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Convert a multibyte character to
+        a wide character (Restartable version of mbtowc.)</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">mbsinit<sup>4</sup></td>
+        
+        <td headers="d116437e59 " class="tdleft">wchar.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">int mbsinit (const mbstate_t *ps);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Test state object <span class="ph synph"><span class="ph var">*ps</span></span> for
+        initial state.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">mbsrtowcs<sup>4</sup></td>
+        
+        <td headers="d116437e59 " class="tdleft">wchar.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">size_t mbsrtowc (wchar_t *dst, const
+        char **src, size_t len, mbstate_t *ps);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Convert multibyte string to a wide
+        character string. (Restartable version of mbstowcs.)</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">mbstowcs</td>
+        
+        <td headers="d116437e59 " class="tdleft">stdlib.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">size_t mbstowcs(wchar_t *<em>pwc</em>,
+        const char *<em>string</em>, size_t <em>n</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Converts the multibyte characters
+        in <em>string</em> to their corresponding wchar_t codes, and stores
+        not more than <em>n</em> codes in <em>pwc</em>.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">mbtowc</td>
+        
+        <td headers="d116437e59 " class="tdleft">stdlib.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">int mbtowc(wchar_t *<em>pwc</em>, const
+        char *<em>string</em>, size_t <em>n</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Stores the wchar_t code corresponding
+        to the first <em>n</em> bytes of multibyte character <em>string</em> into
+        the wchar_t character <em>pwc</em>.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">memchr</td>
+        
+        <td headers="d116437e59 " class="tdleft">string.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">void *memchr(const void *<em>buf</em>,
+        int <em>c</em>, size_t <em>count</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Searches the first <em>count</em> bytes
+        of <em>buf</em> for the first occurrence of <em>c</em> converted to an
+        unsigned character.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">memcmp</td>
+        
+        <td headers="d116437e59 " class="tdleft">string.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">int memcmp(const void *<em>buf1</em>,
+        const void *<em>buf2</em>, size_t <em>count</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Compares up to <em>count</em> bytes
+        of <em>buf1</em> and <em>buf2</em>.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">memcpy</td>
+        
+        <td headers="d116437e59 " class="tdleft">string.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">void *memcpy(void *<em>dest</em>, const
+        void *<em>src</em>, size_t <em>count</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Copies <em>count</em> bytes of <em>src</em> to <em>dest</em>.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">memmove</td>
+        
+        <td headers="d116437e59 " class="tdleft">string.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">void *memmove(void *<em>dest</em>,
+        const void *<em>src</em>, size_t <em>count</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Copies <em>count</em> bytes of <em>src</em> to <em>dest</em>.
+         Allows copying between objects that overlap.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">memset</td>
+        
+        <td headers="d116437e59 " class="tdleft">string.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">void *memset(void *<em>dest</em>, int <em>c</em>,
+        size_t <em>count</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Sets <em>count</em> bytes of <em>dest</em> to
+        a value <em>c</em>.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">mktime</td>
+        
+        <td headers="d116437e59 " class="tdleft">time.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">time_t mktime(struct tm *<em>time</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Converts local <em>time</em> into calendar
+        time.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">mktime64</td>
+        
+        <td headers="d116437e59 " class="tdleft">time.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">time64_t mktime64(struct tm *<em>time</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Converts local <em>time</em> into calendar
+        time.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">modf</td>
+        
+        <td headers="d116437e59 " class="tdleft">math.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">double modf(double <em>x</em>, double
+        *<em>intptr</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Breaks down the floating-point value <em>x</em> into
+        fractional and integral parts.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">nextafter</td>
+        
+        <td headers="d116437e59 " class="tdleft">math.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">double nextafter(double <em>x</em>,
+        double <em>y</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Calculates the next representable
+        value after <em>x</em> in the direction of <em>y</em>.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">nextafterl</td>
+        
+        <td headers="d116437e59 " class="tdleft">math.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">long double nextafterl(long double <em>x</em>,
+        long double <em>y</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Calculates the next representable
+        value after <em>x</em> in the direction of <em>y</em>.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">nexttoward</td>
+        
+        <td headers="d116437e59 " class="tdleft">math.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">double nexttoward(double <em>x</em>,
+        long double <em>y</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Calculates the next representable
+        value after <em>x</em> in the direction of <em>y</em>.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">nexttowardl</td>
+        
+        <td headers="d116437e59 " class="tdleft">math.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">long double nexttowardl(long double <em>x</em>,
+        long double <em>y</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Calculates the next representable
+        value after <em>x</em> in the direction of <em>y</em>.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">nl_langinfo<sup>4</sup></td>
+        
+        <td headers="d116437e59 " class="tdleft">langinfo.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">char *nl_langinfo(nl_item <span class="ph synph"><span class="ph var">item</span></span>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Retrieve from the current locale
+        the string that describes the requested information specified by <span class="ph synph"><span class="ph var">item</span></span>.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">perror</td>
+        
+        <td headers="d116437e59 " class="tdleft">stdio.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">void perror(const char *<em>string</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Prints an error message to stderr.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">pow</td>
+        
+        <td headers="d116437e59 " class="tdleft">math.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">double pow(double <em>x</em>, double <em>y</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Calculates the value <em>x</em> to
+        the power <em>y</em>.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">printf</td>
+        
+        <td headers="d116437e59 " class="tdleft">stdio.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">int printf(const char *<em>format-string</em>, <em>arg-list</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Formats and prints characters and
+        values to stdout.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">putc<sup>1</sup></td>
+        
+        <td headers="d116437e59 " class="tdleft">stdio.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">int putc(int <em>c</em>, FILE *<em>stream</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Prints <em>c</em> to the output <em>stream</em>.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">putchar<sup>1</sup></td>
+        
+        <td headers="d116437e59 " class="tdleft">stdio.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">int putchar(int <em>c</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Prints <em>c</em> to stdout.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">putenv</td>
+        
+        <td headers="d116437e59 " class="tdleft">stdlib.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">int *putenv(const char *<span class="ph synph"><span class="ph var">varname</span></span>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Sets the value of an environment
+        variable by altering an existing variable or creating a new one.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">puts</td>
+        
+        <td headers="d116437e59 " class="tdleft">stdio.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">int puts(const char *<em>string</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Prints a string to stdout.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">putwc<sup>6</sup></td>
+        
+        <td headers="d116437e59 " class="tdleft"><div class="lines">stdio.h<br>
+        wchar.h</div>
+        </td>
+        
+        <td headers="d116437e62 " class="tdleft">wint_t putwchar(wchar_t <em>wc</em>,
+         FILE <em>*stream</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Converts the wide character <em>wc</em> to
+        a multibyte character, and writes it to the stream at the current
+        position.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">putwchar<sup>6</sup></td>
+        
+        <td headers="d116437e59 " class="tdleft">wchar.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">wint_t putwchar(wchar_t <em>wc</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Converts the wide character <em>wc</em> to
+        a multibyte character and writes it to stdout.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">qsort</td>
+        
+        <td headers="d116437e59 " class="tdleft">stdlib.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">void qsort(void *<em>base</em>, size_t <em>num</em>,
+        size_t <em>width</em>, int(*<em>compare</em>)(const void *<em>element1</em>,
+        const void *<em>element2</em>));</td>
+        
+        <td headers="d116437e65 " class="tdleft">Performs a quick sort of an array
+        of <em>num</em> elements, each of <em>width</em> bytes in size.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">quantexpd32</td>
+        
+        <td headers="d116437e59 " class="tdleft">math.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">_Decimal32 quantized32(_Decimal32 <em>x</em>,
+        _Decimal32 <em>y</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Compute the quantum exponent of
+        a single-precision decimal floating-point value.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">quantexpd64</td>
+        
+        <td headers="d116437e59 " class="tdleft">math.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">_Decimal64 quantized64(_Decimal64 <em>x</em>,
+        _Decimal64 <em>y</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Compute the quantum exponent of
+        a double-precision decimal floating-point value.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">quantexpd128</td>
+        
+        <td headers="d116437e59 " class="tdleft">math.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">_Decimal128 quantized128(_Decimal128 <em>x</em>,
+        _Decimal128 <em>y</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Compute the quantum exponent of
+        a quad-precision decimal floating-point value.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">quantized32</td>
+        
+        <td headers="d116437e59 " class="tdleft">math.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">int quantexpd32(_Decimal32 <em>x</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Set the quantum exponent of a single-precision
+        decimal floating-point value to the quantum exponent of another single-precision
+        decimal floating-point value.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">quantized64</td>
+        
+        <td headers="d116437e59 " class="tdleft">math.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">int quantexpd64(_Decimal64 <em>x</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Set the quantum exponent of a double-precision
+        decimal floating-point value to the quantum exponent of another double-precision
+        decimal floating-point value.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">quantized128</td>
+        
+        <td headers="d116437e59 " class="tdleft">math.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">int quantexpd128(_Decimal128 <em>x</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Set the quantum exponent of a quad-precision
+        decimal floating-point value to the quantum exponent of another quad-precision
+        decimal floating-point value.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">samequantumd32</td>
+        
+        <td headers="d116437e59 " class="tdleft">math.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">__bool__ samequantumd32(_Decimal32 <em>x</em>,
+        _Decimal32 <em>y</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Determine if the quantum exponents
+        of two single-precision decimal floating-point values are the same.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">samequantumd64</td>
+        
+        <td headers="d116437e59 " class="tdleft">math.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">__bool__ samequantumd64(_Decimal64 <em>x</em>,
+        _Decimal64 <em>y</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Determine if the quantum exponents
+        of two double-precision decimal floating-point values are the same.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">samequantumd128</td>
+        
+        <td headers="d116437e59 " class="tdleft">math.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">__bool__ samequantumd128(_Decimal128 <em>x</em>,
+        _Decimal128 <em>y</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Determine if the quantum exponents
+        of two quad-precision decimal floating-point values are the same.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">raise</td>
+        
+        <td headers="d116437e59 " class="tdleft">signal.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">int raise(int <em>sig</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Sends the signal <em>sig</em> to the
+        running program.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">rand</td>
+        
+        <td headers="d116437e59 " class="tdleft">stdlib.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">int rand(void);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Returns a pseudo-random integer.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">rand_r</td>
+        
+        <td headers="d116437e59 " class="tdleft">stdlib.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">int rand_r(void);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Returns a pseudo-random integer.
+        (Restartable version)</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">realloc</td>
+        
+        <td headers="d116437e59 " class="tdleft">stdlib.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">void *realloc(void *<em>ptr</em>, size_t <em>size</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Changes the <em>size</em> of a previously
+        reserved storage block.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">regcomp</td>
+        
+        <td headers="d116437e59 " class="tdleft">regex.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">int regcomp(regex_t <em>*preg</em>,
+        const char <em>*pattern</em>, int <em>cflags</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Compiles the source regular expression
+        pointed to by <em>pattern</em> into an executable version and stores
+        it in the location pointed to by <em>preg</em>.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">regerror</td>
+        
+        <td headers="d116437e59 " class="tdleft">regex.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">size_t regerror(int <em>errcode</em>,
+        const regex_t <em>*preg</em>, char <em>*errbuf</em>,  size_t <em>errbuf_size</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Finds the description for the error
+        code <em>errcode</em> for the regular expression  <em>preg</em>.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">regexec</td>
+        
+        <td headers="d116437e59 " class="tdleft">regex.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">int regexec(const regex_t <em>*preg</em>,
+        const char <em>*string</em>, size_t <em>nmatch</em>, regmatch_t <em>*pmatch</em>,
+        int <em>eflags</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Compares the null-ended string <em>string</em> against
+        the compiled regular expression <em>preg</em> to find a match between
+        the two.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">regfree</td>
+        
+        <td headers="d116437e59 " class="tdleft">regex.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">void regfree(regex_t *preg);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Frees any memory that was allocated
+        by regcomp to implement the regular expression <em>preg</em>.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">remove</td>
+        
+        <td headers="d116437e59 " class="tdleft">stdio.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">int remove(const char *<em>filename</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Deletes the file specified by <em>filename</em>.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">rename</td>
+        
+        <td headers="d116437e59 " class="tdleft">stdio.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">int rename(const char *<em>oldname</em>,
+        const char *<em>newname</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Renames the specified file.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">rewind<sup>1</sup></td>
+        
+        <td headers="d116437e59 " class="tdleft">stdio.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">void rewind(FILE *<em>stream</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Repositions the file pointer associated
+        with <em>stream</em> to the beginning of the file.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">scanf</td>
+        
+        <td headers="d116437e59 " class="tdleft">stdio.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">int scanf(const char *<em>format-string</em>, <em>arg-list</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Reads data from stdin into locations
+        given by <em>arg-list</em>.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">setbuf</td>
+        
+        <td headers="d116437e59 " class="tdleft">stdio.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">void setbuf(FILE *<em>stream</em>,
+        char *<em>buffer</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Controls buffering for <em>stream</em>.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">setjmp</td>
+        
+        <td headers="d116437e59 " class="tdleft">setjmp.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">int setjmp(jmp_buf <em>env</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Saves a stack environment that can
+        be subsequently restored by longjmp.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">setlocale</td>
+        
+        <td headers="d116437e59 " class="tdleft">locale.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">char *setlocale(int <em>category</em>,
+        const char *<em>locale</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Changes or queries variables defined
+        in the <em>locale</em>.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">setvbuf</td>
+        
+        <td headers="d116437e59 " class="tdleft">stdio.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">int setvbuf(FILE *<em>stream</em>,
+        char *<em>buf</em>, int <em>type</em>, size_t <em>size</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Controls buffering and buffer <em>size</em> for <em>stream</em>.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">signal</td>
+        
+        <td headers="d116437e59 " class="tdleft">signal.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">void(*signal (int <em>sig</em>, void(*<em>func</em>)(int)))
+        (int);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Registers func as a signal handler
+        for the signal sig.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">sin</td>
+        
+        <td headers="d116437e59 " class="tdleft">math.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">double sin(double <em>x</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Calculates the sine of <em>x</em>.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">sinh</td>
+        
+        <td headers="d116437e59 " class="tdleft">math.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">double sinh(double <em>x</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Calculates the hyperbolic sine of <em>x</em>.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">snprintf</td>
+        
+        <td headers="d116437e59 " class="tdleft">stdio.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">int snprintf(char *outbuf, size_t
+        n, const char*, ...)</td>
+        
+        <td headers="d116437e65 " class="tdleft">Same as sprintf except that the function
+        will stop after n characters have been written to outbuf.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">sprintf</td>
+        
+        <td headers="d116437e59 " class="tdleft">stdio.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">int sprintf(char *<em>buffer</em>,
+        const char *<em>format-string</em>, <em>arg-list</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Formats and stores characters and
+        values in <em>buffer</em>.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">sqrt</td>
+        
+        <td headers="d116437e59 " class="tdleft">math.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">double sqrt(double <em>x</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Calculates the square root of <em>x</em>.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">srand</td>
+        
+        <td headers="d116437e59 " class="tdleft">stdlib.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">void srand(unsigned int <em>seed</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Sets the <em>seed</em> for the pseudo-random
+        number generator.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">sscanf</td>
+        
+        <td headers="d116437e59 " class="tdleft">stdio.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">int sscanf(const char *<em>buffer</em>,
+        const char *<em>format</em>, <em>arg-list</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Reads data from <em>buffer</em> into
+        the locations given by <em>arg-list</em>.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">strcasecmp</td>
+        
+        <td headers="d116437e59 " class="tdleft">strings.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">int srtcasecmp(const char *string1,
+        const char *string2);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Compares strings without case sensitivity.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">strcat</td>
+        
+        <td headers="d116437e59 " class="tdleft">string.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">char *strcat(char *<em>string1</em>,
+        const char *<em>string2</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Concatenates <em>string2</em> to <em>string1</em>.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">strchr</td>
+        
+        <td headers="d116437e59 " class="tdleft">string.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">char *strchr(const char *<em>string</em>,
+        int <em>c</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Locates the first occurrence of <em>c</em> in <em>string</em>.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">strcmp</td>
+        
+        <td headers="d116437e59 " class="tdleft">string.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">int strcmp(const char *<em>string1</em>,
+        const char *<em>string2</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Compares the value of <em>string1</em> to <em>string2</em>.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">strcoll</td>
+        
+        <td headers="d116437e59 " class="tdleft">string.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">int strcoll(const char *<em>string1</em>,
+        const char *<em>string2</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Compares two strings using the collating
+        sequence in the current locale.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">strcpy</td>
+        
+        <td headers="d116437e59 " class="tdleft">string.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">char *strcpy(char *<em>string1</em>,
+        const char *<em>string2</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Copies <em>string2</em> into <em>string1</em>.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">strcspn</td>
+        
+        <td headers="d116437e59 " class="tdleft">string.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">size_t strcspn(const char *<em>string1</em>,
+        const char *<em>string2</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Returns the length of the initial
+        substring of <em>string1</em> consisting of characters not contained
+        in <em>string2</em>.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">strerror</td>
+        
+        <td headers="d116437e59 " class="tdleft">string.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">char *strerror(int <em>errnum</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Maps the error number in <em>errnum</em> to
+        an error message string.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">strfmon<sup>4</sup></td>
+        
+        <td headers="d116437e59 " class="tdleft">wchar.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">int strfmon (char *s, size_t maxsize,
+        const char *format, ...);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Converts monetary value to string.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">strftime</td>
+        
+        <td headers="d116437e59 " class="tdleft">time.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">size_t strftime (char *<em>dest</em>,
+        size_t <em>maxsize</em>, const char *<em>format</em>, const struct tm
+        *<em>timeptr</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Stores characters in an array pointed
+        to by <em>dest</em>, according to the string determined by <em>format</em>.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">strlen</td>
+        
+        <td headers="d116437e59 " class="tdleft">string.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">size_t strlen(const char *<em>string</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Calculates the length of <em>string</em>.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">strncasecmp</td>
+        
+        <td headers="d116437e59 " class="tdleft">strings.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">int strncasecmp(const char *string1,
+        const char *string2, size_t count);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Compares strings without case sensitivity.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">strncat</td>
+        
+        <td headers="d116437e59 " class="tdleft">string.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">char *strncat(char *<em>string1</em>,
+        const char *<em>string2</em>, size_t <em>count</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Concatenates up to <em>count</em> characters
+        of <em>string2</em> to <em>string1</em>.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">strncmp</td>
+        
+        <td headers="d116437e59 " class="tdleft">string.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">int strncmp(const char *<em>string1</em>,
+        const char *<em>string2</em>, size_t <em>count</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Compares up to <em>count</em> characters
+        of <em>string1</em> and <em>string2</em>.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">strncpy</td>
+        
+        <td headers="d116437e59 " class="tdleft">string.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">char *strncpy(char *<em>string1</em>,
+        const char *<em>string2</em>, size_t <em>count</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Copies up to <em>count</em> characters
+        of <em>string2</em> to <em>string1</em>.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">strpbrk</td>
+        
+        <td headers="d116437e59 " class="tdleft">string.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">char *strpbrk(const char *<em>string1</em>,
+        const char *<em>string2</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Locates the first occurrence in <em>string1</em> of
+        any character in <em>string2</em>.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">strptime<sup>4</sup></td>
+        
+        <td headers="d116437e59 " class="tdleft">time.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">char *strptime (const char *buf,
+        const char *format, struct tm *tm);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Date and time conversion</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">strrchr</td>
+        
+        <td headers="d116437e59 " class="tdleft">string.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">char *strrchr(const char *<em>string</em>,
+        int <em>c</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Locates the last occurrence of <em>c</em> in <em>string</em>.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">strspn</td>
+        
+        <td headers="d116437e59 " class="tdleft">string.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">size_t strspn(const char *<em>string1</em>,
+        const char *<em>string2</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Returns the length of the initial
+        substring of <em>string1</em> consisting of characters contained in <em>string2</em>.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">strstr</td>
+        
+        <td headers="d116437e59 " class="tdleft">string.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">char *strstr(const char *<em>string1</em>,
+        const char *<em>string2</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Returns a pointer to the first occurrence
+        of <em>string2</em> in <em>string1</em>.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">strtod</td>
+        
+        <td headers="d116437e59 " class="tdleft">stdlib.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">double strtod(const char *<em>nptr</em>,
+        char **<em>endptr</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Converts <em>nptr</em> to a double
+        precision value.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">strtod32</td>
+        
+        <td headers="d116437e59 " class="tdleft">stdlib.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">_Decimal32 strtod32(const char *<em>nptr</em>,
+        char **<em>endptr</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Converts <em>nptr</em> to a single-precision
+        decimal floating-point value.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">strtod64</td>
+        
+        <td headers="d116437e59 " class="tdleft">stdlib.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">_Decimal64 strtod64(const char *<em>nptr</em>,
+        char **<em>endptr</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Converts <em>nptr</em> to a double-precision
+        decimal floating-point value.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">strtod128</td>
+        
+        <td headers="d116437e59 " class="tdleft">stdlib.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">_Decimal128 strtod128(const char
+        *<em>nptr</em>, char **<em>endptr</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Converts <em>nptr</em> to a quad-precision
+        decimal floating-point value.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">strtof</td>
+        
+        <td headers="d116437e59 " class="tdleft">stdlib.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">float strtof(const char *<em>nptr</em>,
+        char **<em>endptr</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Converts <em>nptr</em> to a float value.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">strtok</td>
+        
+        <td headers="d116437e59 " class="tdleft">string.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">char *strtok(char *<em>string1</em>,
+        const char *<em>string2</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Locates the next token in <em>string1</em> delimited
+        by the next character in <em>string2</em>.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">strtok_r</td>
+        
+        <td headers="d116437e59 " class="tdleft">string.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">char *strtok_r(char *<em>string</em>,
+        const char *<em>seps</em>, char **<em>lasts</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Locates the next token in <em>string</em> delimited
+        by the next character in <em>seps</em>. (Restartable version of strtok.)</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">strtol</td>
+        
+        <td headers="d116437e59 " class="tdleft">stdlib.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">long int strtol(const char *<em>nptr</em>,
+        char **<em>endptr</em>, int <em>base</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Converts <em>nptr</em> to a signed
+        long integer.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">strtold</td>
+        
+        <td headers="d116437e59 " class="tdleft">stdlib.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">long double strtold(const char *<em>nptr</em>,
+        char **<em>endptr</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Converts <em>nptr</em> to a long double
+        value.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">strtoul</td>
+        
+        <td headers="d116437e59 " class="tdleft">stdlib.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">unsigned long int strtoul(const char
+        *<em>string1</em>, char **<em>string2</em>, int <em>base</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Converts <em>string1</em> to an unsigned
+        long integer.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">strxfrm</td>
+        
+        <td headers="d116437e59 " class="tdleft">string.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">size_t strxfrm(char *<em>string1</em>,
+        const char *<em>string2</em>, size_t <em>count</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Converts <em>string2</em> and places
+        the result in <em>string1</em>. The conversion is determined by the
+        program's current locale.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">swprintf</td>
+        
+        <td headers="d116437e59 " class="tdleft">wchar.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">int swprintf(wchar_t <em>*wcsbuffer</em>,
+        size_t <em>n</em>, const wchar_t <em>*format</em>,  <em>arg-list</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Formats and stores a series of wide
+        characters and values into the wide-character buffer <em>wcsbuffer</em>.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">swscanf</td>
+        
+        <td headers="d116437e59 " class="tdleft">wchar.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">int swscanf (const wchar_t <span class="ph synph"><span class="ph var">*buffer</span></span>,
+        const wchar_t <span class="ph synph"><span class="ph var">*format</span></span>, <em>arg-list</em>)</td>
+        
+        <td headers="d116437e65 " class="tdleft"><span class="ph">Reads data from <span class="ph synph"><span class="ph var">buffer</span></span> into
+        the locations given by<span class="ph synph"><span class="ph var"> arg-list</span></span></span>.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">system</td>
+        
+        <td headers="d116437e59 " class="tdleft">stdlib.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">int system(const char *<em>string</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Passes <em>string</em> to the system
+        command analyzer.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">tan</td>
+        
+        <td headers="d116437e59 " class="tdleft">math.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">double tan(double <em>x</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Calculates the tangent of <em>x</em>.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">tanh</td>
+        
+        <td headers="d116437e59 " class="tdleft">math.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">double tanh(double <em>x</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Calculates the hyperbolic tangent
+        of <em>x</em>.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">time</td>
+        
+        <td headers="d116437e59 " class="tdleft">time.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">time_t time(time_t *<em>timeptr</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Returns the current calendar time.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">time64</td>
+        
+        <td headers="d116437e59 " class="tdleft">time.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">time64_t time64(time64_t *<em>timeptr</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Returns the current calendar time.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">tmpfile</td>
+        
+        <td headers="d116437e59 " class="tdleft">stdio.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">FILE *tmpfile(void);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Creates a temporary binary file and
+        opens it.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">tmpnam</td>
+        
+        <td headers="d116437e59 " class="tdleft">stdio.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">char *tmpnam(char *<em>string</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Generates a temporary file name.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">toascii</td>
+        
+        <td headers="d116437e59 " class="tdleft">ctype.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">int toascii(int <em>c</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Converts <em>c</em> to a character
+        in the 7-bit US-ASCII character set.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">tolower</td>
+        
+        <td headers="d116437e59 " class="tdleft">ctype.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">int tolower(int <em>c</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Converts <em>c</em> to lowercase.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">toupper</td>
+        
+        <td headers="d116437e59 " class="tdleft">ctype.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">int toupper(int <em>c</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Converts <em>c</em> to uppercase.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">towctrans</td>
+        
+        <td headers="d116437e59 " class="tdleft">wctype.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">wint_t towctrans(wint_t <em>wc</em>,
+        wctrans_t <em>desc</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Translates the wide character <em>wc</em> based
+        on the mapping described by <em>desc</em>.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">towlower<sup>4</sup></td>
+        
+        <td headers="d116437e59 " class="tdleft">wctype.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">wint_t towlower (wint_t wc);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Converts uppercase letter to lowercase
+        letter.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">towupper<sup>4</sup></td>
+        
+        <td headers="d116437e59 " class="tdleft">wctype.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">wint_t towupper (wint_t wc);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Converts lowercase letter to uppercase
+        letter.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">ungetc<sup>1</sup></td>
+        
+        <td headers="d116437e59 " class="tdleft">stdio.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">int ungetc(int <em>c</em>, FILE *<em>stream</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Pushes <em>c</em> back onto the input <em>stream</em>.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">ungetwc<sup>6</sup></td>
+        
+        <td headers="d116437e59 " class="tdleft"><div class="lines">stdio.h<br>
+        wchar.h</div>
+        </td>
+        
+        <td headers="d116437e62 " class="tdleft">wint_t ungetwc(wint_t <em>wc</em>,
+        FILE <em>*stream</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Pushes the wide character <em>wc</em> back
+        onto the input stream.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">va_arg</td>
+        
+        <td headers="d116437e59 " class="tdleft">stdarg.h</td>
+        
+        <td headers="d116437e62 " class="tdleft"><em>var_type</em> va_arg(va_list <em>arg_ptr</em>,
+        var_type);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Returns the value of one argument
+        and modifies <em>arg_ptr</em> to point to the next argument.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">va_copy</td>
+        
+        <td headers="d116437e59 " class="tdleft">stdarg.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">void <em>va_copy</em>(va_list <em>dest</em>,
+        va_list <em>src</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Initializes <em>dest</em> as a copy
+        of <em>src</em>.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">va_end</td>
+        
+        <td headers="d116437e59 " class="tdleft">stdarg.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">void <em>va_end</em>(va_list <em>arg_ptr</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Facilitates normal return from variable
+        argument list processing.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">va_start</td>
+        
+        <td headers="d116437e59 " class="tdleft">stdarg.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">void <em>va_start</em>(va_list <em>arg_ptr,
+        variable_name</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Initializes <em>arg_ptr</em> for subsequent
+        use by <em>va_arg</em> and <em>va_end</em>.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">vfprintf</td>
+        
+        <td headers="d116437e59 " class="tdleft">stdio.h stdarg.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">int vfprintf(FILE *<em>stream</em>,
+        const char *<em>format</em>, <em>va_list arg_ptr</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Formats and prints characters to
+        the output <em>stream</em> using a variable number of arguments.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">vfscanf</td>
+        
+        <td headers="d116437e59 " class="tdleft">stdio.h stdarg.h </td>
+        
+        <td headers="d116437e62 " class="tdleft">int vfscanf(FILE <em>*stream</em>,
+        const char <em>*format</em>, va_list <em>arg_ptr</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Reads data from a specified stream
+        into locations given by a variable number of arguments.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">vfwprintf<sup>6</sup></td>
+        
+        <td headers="d116437e59 " class="tdleft"><div class="lines">stdarg.h<br>
+        stdio.h<br>
+        wchar.h</div>
+        </td>
+        
+        <td headers="d116437e62 " class="tdleft">int vfwprintf(FILE <em>*stream</em>,
+        const wchar_t <em>*format</em>, <em>va_list arg</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Equivalent to fwprintf, except that
+        the variable argument list is replaced by <em>arg</em>.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">vfwscanf</td>
+        
+        <td headers="d116437e59 " class="tdleft">stdio.h stdarg.h </td>
+        
+        <td headers="d116437e62 " class="tdleft">int vfwscanf(FILE <em>*stream</em>,
+        const wchar_t <em>*format</em>, <em>va_list arg_ptr</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Reads wide data from a specified
+        stream into locations given by a variable number of arguments.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">vprintf</td>
+        
+        <td headers="d116437e59 " class="tdleft">stdio.h stdarg.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">int vprintf(const char *<em>format</em>,
+        va_list <em>arg_ptr</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Formats and prints characters to
+        stdout using a variable number of arguments.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">vscanf</td>
+        
+        <td headers="d116437e59 " class="tdleft">stdio.h stdarg.h </td>
+        
+        <td headers="d116437e62 " class="tdleft">int vscanf(const char <em>*format</em>, <em>va_list
+        arg_ptr</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Reads data from stdin into locations
+        given by a variable number of arguments.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">vsprintf</td>
+        
+        <td headers="d116437e59 " class="tdleft">stdio.h stdarg.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">int vsprintf(char *<em>target-string</em>,
+        const char *<em>format</em>, va_list <em>arg_ptr</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Formats and stores characters in
+        a buffer using a variable number of arguments.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">vsnprintf</td>
+        
+        <td headers="d116437e59 " class="tdleft">stdio.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">int vsnprintf(char *outbuf, size_t
+        n, const char*, va_list);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Same as vsprintf except that the
+        function will stop after n characters have been written to outbuf.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">vsscanf</td>
+        
+        <td headers="d116437e59 " class="tdleft">stdio.h stdarg.h </td>
+        
+        <td headers="d116437e62 " class="tdleft">int vsscanf(const char<em>*buffer</em>,
+        const char <em>*format</em>, <em>va_list arg_ptr</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Reads data from a buffer into locations
+        given by a variable number of arguments.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">vswprintf</td>
+        
+        <td headers="d116437e59 " class="tdleft"><div class="lines">stdarg.h<br>
+        wchar.h</div>
+        </td>
+        
+        <td headers="d116437e62 " class="tdleft">int vswprintf(wchar_t <em>*wcsbuffer</em>,
+         size_t <em>n</em>, const wchar_t <em>*format</em>,  <em>va_list arg</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Formats and stores a series of wide
+        characters and values in the buffer <em>wcsbuffer</em>.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">vswscanf</td>
+        
+        <td headers="d116437e59 " class="tdleft">stdio.h wchar.h </td>
+        
+        <td headers="d116437e62 " class="tdleft">int vswscanf(const wchar_t <em>*buffer</em>,
+        const wchar_t <em>*format</em>, <em>va_list arg_ptr</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Reads wide data from a buffer into
+        locations given by a variable number of arguments.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">vwprintf<sup>6</sup></td>
+        
+        <td headers="d116437e59 " class="tdleft"><div class="lines">stdarg.h<br>
+        wchar.h</div>
+        </td>
+        
+        <td headers="d116437e62 " class="tdleft">int vwprintf(const wchar_t <em>*format</em>, <em>va_list
+        arg</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Equivalent to wprintf, except that
+        the variable argument list is replaced by <em>arg</em>. </td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">vwscanf</td>
+        
+        <td headers="d116437e59 " class="tdleft">stdio.h wchar.h </td>
+        
+        <td headers="d116437e62 " class="tdleft">int vwscanf(const wchar_t <em>*format</em>, <em>va_list
+        arg_ptr</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Reads wide data from stdin into locations
+        given by a variable number of arguments.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">wcrtomb<sup>4</sup></td>
+        
+        <td headers="d116437e59 " class="tdleft">wchar.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">int wcrtomb (char *s, wchar_t wchar,
+        mbstate_t *pss);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Converts a wide character to a multibyte
+        character. (Restartable version of wctomb.)</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">wcscat</td>
+        
+        <td headers="d116437e59 " class="tdleft">wchar.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">wchar_t *wcscat(wchar_t  <em>*string1</em>,
+        const wchar_t  <em>*string2</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Appends a copy of the string pointed
+        to by <em>string2</em> to the end of the string pointed to by <em>string1</em>.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">wcschr</td>
+        
+        <td headers="d116437e59 " class="tdleft">wchar.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">wchar_t *wcschr(const wchar_t  <em>*string</em>,
+        wchar_t  <em>character</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Searches the wide-character string
+        pointed to by <em>string</em> for the occurrence of <em>character</em>.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">wcscmp</td>
+        
+        <td headers="d116437e59 " class="tdleft">wchar.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">int wcscmp(const wchar_t  <em>*string1</em>,
+        const wchar_t  <em>*string2</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Compares two wide-character strings, <em>*string1</em> and <em>*string2</em>.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">wcscoll<sup>4</sup></td>
+        
+        <td headers="d116437e59 " class="tdleft">wchar.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">int wcscoll (const wchar_t *wcs1,
+        const wchar_t *wcs2);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Compares two wide-character strings
+        using the collating sequence in the current locale.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">wcscpy</td>
+        
+        <td headers="d116437e59 " class="tdleft">wchar.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">wchar_t *wcscpy(wchar_t  <em>*string1</em>,
+        const wchar_t  <em>*string2</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Copies the contents of <em>*string2</em> (including
+        the ending wchar_t  null character) into <em>*string1</em>.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">wcscspn</td>
+        
+        <td headers="d116437e59 " class="tdleft">wchar.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">size_t wcscspn(const wchar_t  <em>*string1</em>,
+        const wchar_t  <em>*string2</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Determines the number of wchar_t
+         characters in the initial segment of the string pointed to by <em>*string1</em> that
+        do not appear in the string pointed to by <em>*string2</em>.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">wcsftime</td>
+        
+        <td headers="d116437e59 " class="tdleft">wchar.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">size_t wcsftime(wchar_t <em>*wdest</em>,
+        size_t <em>maxsize</em>, const wchar_t <em>*format</em>,  const struct
+        tm <em>*timeptr</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Converts the time and date specification
+        in the <em>timeptr</em> structure into a wide-character string.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">wcslen</td>
+        
+        <td headers="d116437e59 " class="tdleft">wchar.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">size_t wcslen(const wchar_t  <em>*string</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Computes the number of wide-characters
+        in the string pointed to by <em>string</em>.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">wcslocaleconv</td>
+        
+        <td headers="d116437e59 " class="tdleft">locale.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">struct wcslconv *wcslocaleconv(void);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Formats numeric quantities in <span class="ph">struct
+        wcslconv</span> according to the current locale.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">wcsncat</td>
+        
+        <td headers="d116437e59 " class="tdleft">wchar.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">wchar_t *wcsncat(wchar_t  <em>*string1</em>,
+        const wchar_t  <em>*string2</em>, size_t <em>count</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Appends up to <em>count</em> wide characters
+        from <em>string2</em> to the end of <em>string1</em>, and appends a wchar_t
+        null character to the result.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">wcsncmp</td>
+        
+        <td headers="d116437e59 " class="tdleft">wchar.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">int wcsncmp(const wchar_t  <em>*string1</em>,
+        const wchar_t  <em>*string2</em>, size_t <em>count</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Compares up to <em>count</em> wide
+        characters in <em>string1</em> to  <em>string2</em>.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">wcsncpy</td>
+        
+        <td headers="d116437e59 " class="tdleft">wchar.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">wchar_t *wcsncpy(wchar_t  <em>*string1</em>,
+        const wchar_t  <em>*string2</em>, size_t <em>count</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Copies up to <em>count</em> wide characters
+        from <em>string2</em> to  <em>string1</em>.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">wcspbrk</td>
+        
+        <td headers="d116437e59 " class="tdleft">wchar.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">wchar_t *wcspbrk(const wchar_t  <em>*string1</em>,
+        const wchar_t  <em>*string2</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Locates the first occurrence in the
+        string pointed to by <em>string1</em> of any wide characters from the
+        string pointed to by <em>string2</em>.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">wcsptime</td>
+        
+        <td headers="d116437e59 " class="tdleft">wchar.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">wchar_t *wcsptime ( const wchar_t
+        *buf, const wchar_t *format, struct tm *tm );</td>
+        
+        <td headers="d116437e65 " class="tdleft">Date and time conversion. Equivalent
+        to strptime(), except that it uses wide characters.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">wcsrchr</td>
+        
+        <td headers="d116437e59 " class="tdleft">wchar.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">wchar_t *wcsrchr(const wchar_t  <em>*string</em>,
+        wchar_t  <em>character</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Locates the last occurrence of  <em>character</em> in
+        the string pointed to by <em>string</em>.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">wcsrtombs<sup>4</sup></td>
+        
+        <td headers="d116437e59 " class="tdleft">wchar.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">size_t wcsrtombs (char *dst, const
+        wchar_t **src, size_t len, mbstate_t *ps);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Converts wide character string to
+        multibyte string. (Restartable version of wcstombs.)</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">wcsspn</td>
+        
+        <td headers="d116437e59 " class="tdleft">wchar.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">size_t wcsspn(const wchar_t <em>*string1</em>,
+        const wchar_t <em>*string2</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Computes the number of wide characters
+        in the initial segment of the string pointed to by <em>string1</em>,
+        which consists entirely of wide characters from the string pointed
+        to by <em>string2</em>.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">wcsstr</td>
+        
+        <td headers="d116437e59 " class="tdleft">wchar.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">wchar_t *wcsstr(const wchar_t <em>*wcs1</em>,
+        const wchar_t <em>*wcs2</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Locates the first occurrence of <em>wcs2</em> 
+        in <em>wcs1</em>.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">wcstod</td>
+        
+        <td headers="d116437e59 " class="tdleft">wchar.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">double wcstod(const wchar_t <em>*nptr</em>,
+        wchar_t <em>**endptr</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Converts the initial portion of the
+        wide-character string pointed to by <em>nptr</em> to a double value.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">wcstod32</td>
+        
+        <td headers="d116437e59 " class="tdleft">wchar.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">_Decimal32 wcstod32(const wchar_t <em>*nptr</em>,
+        wchar_t <em>**endptr</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Converts the initial portion of the
+        wide-character string pointed to by <em>nptr</em> to a single-precision
+        decimal floating-point value.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">wcstod64</td>
+        
+        <td headers="d116437e59 " class="tdleft">wchar.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">_Decimal64 wcstod64(const wchar_t <em>*nptr</em>,
+        wchar_t <em>**endptr</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Converts the initial portion of the
+        wide-character string pointed to by <em>nptr</em> to a double-precision
+        decimal floating-point value.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">wcstod128</td>
+        
+        <td headers="d116437e59 " class="tdleft">wchar.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">_Decimal128 wcstod128(const wchar_t <em>*nptr</em>,
+        wchar_t <em>**endptr</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Converts the initial portion of
+        the wide-character string pointed to by <em>nptr</em> to a quad-precision
+        decimal floating-point value.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">wcstof</td>
+        
+        <td headers="d116437e59 " class="tdleft">wchar.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">float wcstof(const wchar_t <em>*nptr</em>,
+        wchar_t <em>**endptr</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Converts the initial portion of the
+        wide-character string pointed to by <em>nptr</em> to a float value.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">wcstok</td>
+        
+        <td headers="d116437e59 " class="tdleft">wchar.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">wchar_t *wcstok(wchar_t <em>*wcs1</em>,
+        const wchar_t <em>*wcs2</em>, wchar_t <em>**ptr</em>)</td>
+        
+        <td headers="d116437e65 " class="tdleft">Breaks <em>wcs1</em> into a sequence
+        of tokens, each of which is delimited by a wide character from the
+        wide string pointed to by <em>wcs2</em>.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">wcstol</td>
+        
+        <td headers="d116437e59 " class="tdleft">wchar.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">long int wcstol(const wchar_t <em>*nptr</em>,
+        wchar_t <em>**endptr</em>, int <em>base</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Converts the initial portion of
+        the wide-character string pointed to by <em>nptr</em> to a long integer
+        value.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">wcstold</td>
+        
+        <td headers="d116437e59 " class="tdleft">wchar.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">long double wcstold(const wchar_t <em>*nptr</em>,
+        wchar_t <em>**endptr</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Converts the initial portion of the
+        wide-character string pointed to by <em>nptr</em> to a long double value.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">wcstombs</td>
+        
+        <td headers="d116437e59 " class="tdleft">stdlib.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">size_t wcstombs(char *dest, const
+        wchar_t *<em>string</em>, size_t <span class="ph synph"><span class="ph var">count</span></span>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Converts the wchar_t <em>string</em> into
+        a multibyte string <em>dest</em>.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">wcstoul</td>
+        
+        <td headers="d116437e59 " class="tdleft">wchar.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">unsigned long int wcstoul(const wchar_t
+         <em>*nptr</em>, wchar_t <em>**endptr</em>, int  <em>base</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Converts the initial portion of the
+        wide-character string pointed to by <em>nptr</em> to an unsigned long
+        integer value.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">wcsxfrm<sup>4</sup></td>
+        
+        <td headers="d116437e59 " class="tdleft">wchar.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">size_t wcsxfrm (wchar_t <em>*wcs1</em>,
+        const wchar_t <em>*wcs2</em>, size_t <em>n</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Transforms a wide-character string
+        to values which represent character collating weights and places the
+        resulting wide-character string into an array.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">wctob</td>
+        
+        <td headers="d116437e59 " class="tdleft"><div class="lines">stdarg.h<br>
+        wchar.h</div>
+        </td>
+        
+        <td headers="d116437e62 " class="tdleft">int wctob(wint_t <em>wc</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Determines whether <em>wc</em> corresponds
+        to a member of the extended character set whose multibyte character
+        representation is a single byte when in the initial shift state.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">wctomb</td>
+        
+        <td headers="d116437e59 " class="tdleft">stdlib.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">int wctomb(char *<em>string</em>, wchar_t <em>character</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Converts the wchar_t value of <em>character</em> into
+        a multibyte <em>string</em>.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">wctrans</td>
+        
+        <td headers="d116437e59 " class="tdleft">wctype.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">wctrans_t wctrans(const char <em>*property</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Constructs a value with type wctrans_t
+        that describes a mapping between wide characters identified by the
+        string argument property.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">wctype<sup>4</sup></td>
+        
+        <td headers="d116437e59 " class="tdleft">wchar.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">wctype_t wctype (const char  <em>*property</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Obtains handle for character property
+        classification.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">wcwidth</td>
+        
+        <td headers="d116437e59 " class="tdleft">wchar.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">int wcswidth(const wchar_t   <em>*pwcs</em>,
+        size_t <em>n</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Determine the display width of a
+        wide character string.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">wmemchr</td>
+        
+        <td headers="d116437e59 " class="tdleft">wchar.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">wchar_t *wmemchr(const wchar_t <em>*s</em>,
+        wchar_t <em>c</em>, size_t <em>n</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Locates the first occurrence of <em>c</em> in
+        the initial <em>n</em> wide characters of the object pointed to by  <em>s.</em></td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">wmemcmp</td>
+        
+        <td headers="d116437e59 " class="tdleft">wchar.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">int wmemcmp(const wchar_t <em>*s1</em>,
+        const wchar_t <em>*s2</em>, size_t <em>n</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Compares the first <em>n</em> wide
+        characters of the object pointed to by <em>s1</em> to the first  <em>n</em> characters
+        of the object pointed to by <em>s2</em>.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">wmemcpy</td>
+        
+        <td headers="d116437e59 " class="tdleft">wchar.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">wchar_t *wmemcpy(wchar_t <em>*s1</em>,
+        const wchar_t <em>*s2</em>, size_t <em>n</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Copies <em>n</em> wide characters from
+        the object pointed to by <em>s2</em> to the object pointed to by  <em>s1</em>.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">wmemmove</td>
+        
+        <td headers="d116437e59 " class="tdleft">wchar.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">wchar_t *wmemmove(wchar_t <em>*s1</em>,
+        const wchar_t <em>*s2</em>, size_t <em>n</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Copies <em>n</em> wide characters from
+        the object pointed to by <em>s2</em> to the object pointed to by  <em>s1</em>.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">wmemset</td>
+        
+        <td headers="d116437e59 " class="tdleft">wchar.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">wchar_t *wmemset(wchar_t <em>*s</em>,
+        wchar_t <em>c</em>, size_t <em>n</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Copies the value of <em>c</em> into
+        each of the first <em>n</em> wide characters of the object pointed to
+        by <em>s</em>.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">wprintf<sup>6</sup></td>
+        
+        <td headers="d116437e59 " class="tdleft">wchar.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">int wprintf(const wchar_t  <em>*format</em>,
+         <em>arg-list</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Equivalent to fwprintf with the argument
+        stdout interposed before the arguments to wprintf.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">wscanf<sup>6</sup></td>
+        
+        <td headers="d116437e59 " class="tdleft">wchar.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">int wscanf(const wchar_t  <em>*format</em>,
+         <em>arg-list</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Equivalent to fwscanf with the argument
+        stdin interposed before the arguments of wscanf.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">y0</td>
+        
+        <td headers="d116437e59 " class="tdleft">math.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">double y0(double <em>x</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Calculates the Bessel function value
+        of the second kind of order 0.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">y1</td>
+        
+        <td headers="d116437e59 " class="tdleft">math.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">double y1(double <em>x</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Calculates the Bessel function value
+        of the second kind of order 1.</td>
+        
+        </tr>
+        
+        <tr>
+        <td headers="d116437e56 " class="tdleft">yn</td>
+        
+        <td headers="d116437e59 " class="tdleft">math.h</td>
+        
+        <td headers="d116437e62 " class="tdleft">double yn(int <em>n</em>, double <em>x</em>);</td>
+        
+        <td headers="d116437e65 " class="tdleft">Calculates the Bessel function value
+        of the second kind of order <em>n.</em></td>
+        
+        </tr>
+        
+        
+        
+        </tbody>
+        </table>
+</body>
+</html>

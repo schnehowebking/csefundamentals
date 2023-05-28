@@ -1,0 +1,2 @@
+Enter a string: Total vowels: 9
+Total consonants: 7
