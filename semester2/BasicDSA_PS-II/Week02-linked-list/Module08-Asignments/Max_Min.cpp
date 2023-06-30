@@ -1,5 +1,7 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
+
 using namespace std;
+
 class Node
 {
     public:
@@ -12,31 +14,35 @@ class Node
     }      
 };
 
-void insert_at_tail(Node * &head, int v)
+
+void insert_at_tail(Node*& head, int val)
 {
-    Node * newNode = new Node(v);
-    if(head==NULL)
+    Node* newNode = new Node(val);
+    
+    if (head == NULL)
     {
         head = newNode;
-        return;
-        
     }
-    Node * tmp = head;
-    while(tmp->next != NULL)
+    else
     {
-        tmp= tmp->next;
+        Node* tmp = head;
+        while (tmp->next != NULL)
+        {
+            tmp = tmp->next;
+        }
+        
+        tmp->next = newNode;
     }
-    
-    tmp->next=newNode;
-
 }
+
+
 
 int main()
 {
+    // Write your code here
+    
     int val;
     Node *head = NULL;
-    int mx = INT_MIN;
-    int mn = INT_MAX;
     while (true)
     {
         cin>>val;
@@ -44,18 +50,17 @@ int main()
         insert_at_tail(head, val);
     }
     
-    while (head->val != NULL)
+    int mx = INT_MIN;
+    int mn = INT_MAX;
+    Node* tmp = head;
+    while (tmp != NULL)
     {
-        if(head->val>mx)
-        {
-            mx = head->val;
-        }
-        else if (head->val<mn)
-        {
-            mn=head->val;
-        }
+        mx = max(mx, tmp->val);
+        mn = min(mn, tmp->val);
+        tmp = tmp->next;
     }
 
     cout<<mx<<" "<<mn<<endl;
+
     return 0;
 }
