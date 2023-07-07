@@ -39,6 +39,26 @@ int size_of_linkedList(Node * head)
     
 }
 
+void findMid(Node * head)
+{
+    int s = size_of_linkedList(head);
+    int mid = (s+1)/2;
+    Node *tmp = head;
+    for (int i = 0; i<mid-1; i++)
+    {
+        tmp = tmp->next;
+    }
+    if (s%2==0)
+    {
+        cout << tmp->val<<" "<<tmp->next->val<<endl;
+    }
+    else
+    {
+        cout<<tmp->val<<endl;
+    }
+    
+
+}
 
 int main()
 {
@@ -51,15 +71,20 @@ int main()
         if (val == -1) break;
         insert_tail(head,tail, val);
     }
-    Node *tmp = head;
 
-    int p = size_of_linkedList(tmp);
-    int mid = p+1/2;
-
-    for (int i = 0; i < mid-1; i++)
+    for (Node *i = head; i->next != NULL; i = i->next)
     {
-        /* code */
+        for (Node *j = i->next; j != NULL; j = j->next)
+        {
+            if (i->val < j->val)
+            {
+                swap(i->val, j->val);
+            }
+        }
     }
+
+    findMid(head);
+
     
     
     return 0;
