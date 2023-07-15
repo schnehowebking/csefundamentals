@@ -1,6 +1,5 @@
 #include<bits/stdc++.h>
 using namespace std;
-
 class Node
 {
     public:
@@ -14,7 +13,6 @@ class Node
         this->right=NULL;
     }      
 };
-
 
 Node* inputTree()
 {
@@ -58,6 +56,7 @@ void levelOrderLeft(Node * root)
 {
     if(root==NULL)
     {
+        cout<<"No Tree"<<endl;
         return;
     }
     queue<Node*>q;
@@ -84,11 +83,35 @@ void levelOrderLeft(Node * root)
     }
 }
 
+bool binarysearch(Node*root, int x)
+{
+    if(root==NULL) return false;
+    if(root->val==x) return true;
+
+    if(x<root->val)
+    {
+        return binarysearch(root->left, x);
+    }
+    else
+    {
+        return binarysearch(root->right, x);
+    }
+}
+
+
 int main()
 {
-    Node *root=inputTree();
-
-    levelOrderLeft(root);
+    // complexity = O(hight)= O(logN)/O(N)
+    // hight ~= log(N)
+    Node * root = inputTree();
+    if(binarysearch(root, 6))
+    {
+        cout<<"Found"<<endl;
+    }
+    else
+    {
+        cout<<"Not Found"<<endl;
+    }
     
     return 0;
 }

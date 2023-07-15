@@ -1,6 +1,5 @@
 #include<bits/stdc++.h>
 using namespace std;
-
 class Node
 {
     public:
@@ -15,49 +14,11 @@ class Node
     }      
 };
 
-
-Node* inputTree()
-{
-    int n;
-    cin>>n;
-    Node * root;
-    if(n==-1) root=NULL;
-    else root = new Node(n);
-    queue<Node*> q;
-    if(root) q.push(root);
-    while (!q.empty())
-    {
-        // ber kore ana...
-        Node * p = q.front();
-        q.pop();
-
-        // jabotiyo kaj...
-        int l, r;
-
-        cin>>l>>r;
-
-        Node * left;
-        Node * right;
-        if(l==-1) left =NULL;
-        else left = new Node(l);
-        if(r==-1) right =NULL;
-        else right  = new Node(r);
-
-        p->left = left;
-        p->right = right;
-
-        //childer push...
-        if(p->left) q.push(p->left);
-        if(p->right) q.push(p->right);
-    }
-    return root;
-
-}
-
 void levelOrderLeft(Node * root)
 {
     if(root==NULL)
     {
+        cout<<"No Tree"<<endl;
         return;
     }
     queue<Node*>q;
@@ -84,11 +45,36 @@ void levelOrderLeft(Node * root)
     }
 }
 
+
+
+
+Node * convert(int a[], int n, int l, int r)
+{
+    if(l>r) return NULL;
+    int mid =  (l+r)/2;
+    Node * root = new Node(a[mid]);
+    Node * leftRoot = convert(a, n, l, mid-1);
+    Node * rightRoot = convert(a, n, mid+1, r);
+    root->left = leftRoot;
+    root->right = rightRoot;
+    return root;
+}
+
 int main()
 {
-    Node *root=inputTree();
+   
+    int n;
+    cin>>n;
+    int a[n];
+    for (int i = 0; i < n; i++)
+    {
+        cin>>a[i];
+    }
+    // sortted array
 
+    Node * root = convert(a,n,0,n-1);
     levelOrderLeft(root);
+   
     
     return 0;
 }
