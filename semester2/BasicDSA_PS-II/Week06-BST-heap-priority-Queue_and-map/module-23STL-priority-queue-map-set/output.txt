@@ -1,0 +1,9 @@
+to 3
+nnn 1
+love 3
+kkk 1
+in 3
+code 3
+I 3
+CPP 1
+3
